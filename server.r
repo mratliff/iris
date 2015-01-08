@@ -2,7 +2,7 @@ library(shiny)
 library(caret)
 library(pls)
 library(datasets)
-
+library(e1071)
 d <- iris
 l <- train(d[,1:4], d$Species, method = "pls")
 
